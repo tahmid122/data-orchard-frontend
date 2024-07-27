@@ -84,11 +84,7 @@ const Upload3 = () => {
                 }}
               />
             ) : (
-              <img
-                src="/public/nidplaceholder.avif"
-                alt="NiDBack"
-                id="cvImage"
-              />
+              <img src="/nidplaceholder.avif" alt="NiDBack" id="cvImage" />
             )}
             <input
               style={{ width: "100%", display: "none" }}
