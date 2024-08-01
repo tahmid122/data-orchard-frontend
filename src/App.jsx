@@ -24,6 +24,7 @@ import AdminUpdate from "./components/AdminUpdate";
 import ForgetPassword from "./components/ForgetPassword";
 import LoadingProvider from "./components/LoadingContext";
 import GlobalPreloader from "./components/GlobalPreloader";
+import UsersReport from "./components/UsersReport";
 function App() {
   return (
     <AuthProvider>
@@ -91,6 +92,14 @@ function App() {
                   element={
                     <ProtectedRoutes2>
                       <Admin />
+                    </ProtectedRoutes2>
+                  }
+                />
+                <Route
+                  path="usersReport"
+                  element={
+                    <ProtectedRoutes2>
+                      <UsersReport />
                     </ProtectedRoutes2>
                   }
                 />

@@ -1120,6 +1120,58 @@ textarea {
   background-color: white;
   color: black;
 }
+.usersReport-content {
+  margin-top: 50px;
+}
+.usersReport-content table tr td {
+  text-align: start;
+  padding: 5px;
+  padding-left: 10px;
+  border: 1px solid white;
+}
+.search-filter {
+  margin-top: 20px;
+}
+.search-filter form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.search-filter form select,
+input {
+  height: 50px;
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
+  /* margin: 1px 0; */
+  padding: 5px;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+}
+.search-filter form select option {
+  color: black;
+}
+.search-filter form button {
+  width: 100px;
+  background: white;
+  color: black;
+  outline: none;
+  border: none;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.5s;
+  width: 100%;
+}
+.search-filter form button:hover {
+  transition: all 0.5s;
+  background-color: black;
+  color: white;
+}
 /* Admin */
 /* History */
 .history-container {

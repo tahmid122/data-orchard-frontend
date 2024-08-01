@@ -230,6 +230,16 @@ const Admin = () => {
             </li>
             <li>
               <span
+                onClick={() => {
+                  navigate("/usersReport");
+                }}
+                style={{ cursor: "pointer" }}
+              >
+                Users Report
+              </span>
+            </li>
+            <li>
+              <span
                 style={{ cursor: "pointer" }}
                 onClick={() => {
                   navigate("/adminUpdate");
