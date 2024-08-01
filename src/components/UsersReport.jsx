@@ -15,12 +15,15 @@ const UsersReport = () => {
   const getUsersReport = async () => {
     try {
       startLoading();
-      const res = await fetch("http://localhost:3999/get-dataorchard", {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const res = await fetch(
+        "https://data-orchard-server.onrender.com/get-dataorchard",
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
       const data = await res.json();
 
       if (data) {
@@ -45,15 +48,18 @@ const UsersReport = () => {
     setUserRecordName(desiredUserName);
     try {
       startLoading();
-      const res = await fetch("http://localhost:3999/desired-userName", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          desiredUserName,
-        }),
-      });
+      const res = await fetch(
+        "https://data-orchard-server.onrender.com/desired-userName",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            desiredUserName,
+          }),
+        }
+      );
       const data = await res.json();
       if (data) {
         setUsersReport(data);
@@ -74,16 +80,19 @@ const UsersReport = () => {
 
     try {
       startLoading();
-      const res = await fetch("http://localhost:3999/desired-user-record", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          userRecordName,
-          userRecordDate,
-        }),
-      });
+      const res = await fetch(
+        "https://data-orchard-server.onrender.com/desired-user-record",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            userRecordName,
+            userRecordDate,
+          }),
+        }
+      );
       const data = await res.json();
       if (data) {
         setUsersReport(data);
