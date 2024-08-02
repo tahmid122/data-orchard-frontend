@@ -75,6 +75,7 @@ const AdminUpdate = () => {
     <div>
       <div className="navAdmin">
         <nav className="mainNav">
+          <img src="/dataOrchard.png" alt="dataOrchard.png" />
           <ul>
             <li>
               <span

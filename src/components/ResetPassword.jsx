@@ -115,9 +115,10 @@ const ResetPassword = () => {
   };
 
   return (
-    <div id="register">
+    <div id="register" style={{ marginTop: "40px" }}>
       <div className="navAdmin">
         <nav className="mainNav">
+          <img src="/dataOrchard.png" alt="dataOrchard.png" />
           <ul>
             <li>
               <span
@@ -190,7 +191,7 @@ const ResetPassword = () => {
             className="findUserPassword"
           >
             <h2>Find Password</h2>
-            <div className="input-box" style={{ marginBottom: "40px" }}>
+            <div className="input-box">
               <FaEnvelope className="iconn" />
               <input
                 placeholder="Enter Your Email"
@@ -221,7 +222,7 @@ const ResetPassword = () => {
           </form>
           <h2>Reset Password</h2>
           <form method="POST" onSubmit={handleSubmit} autoComplete="off">
-            <div className="input-box" style={{ marginBottom: "40px" }}>
+            <div className="input-box">
               <FaEnvelope className="iconn" />
               <input
                 placeholder="Enter Your Email"
@@ -241,7 +242,7 @@ const ResetPassword = () => {
               <label htmlFor="email">Email</label>
             </div>
 
-            <div className="input-box" style={{ marginBottom: "40px" }}>
+            <div className="input-box">
               <FaLock className="iconn" />
               <input
                 placeholder="Enter Your Password"

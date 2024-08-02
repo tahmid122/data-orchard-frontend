@@ -119,10 +119,12 @@ const UsersReport = () => {
         alignItems: "center",
         justifyContent: "center",
         flexDirection: "column",
+        marginTop: "40px",
       }}
     >
       <div className="navAdmin">
         <nav className="mainNav">
+          <img src="/dataOrchard.png" alt="dataOrchard.png" />
           <ul>
             <li>
               <span
@@ -207,6 +209,13 @@ const UsersReport = () => {
           )}
         </div>
         <div className="usersReport-content">
+          {usersReport ? (
+            <h4 style={{ marginBottom: "20px" }}>
+              Total submitted data : {usersReport.length}
+            </h4>
+          ) : (
+            ""
+          )}
           {usersReport ? (
             <table border={1} cellSpacing={0} style={{ width: "100%" }}>
               <tbody>

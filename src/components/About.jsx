@@ -1,6 +1,10 @@
 import React from "react";
 import MainNav from "./MainNav";
-
+import { FaUser } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa";
 const About = () => {
   return (
     <section id="about">
@@ -8,31 +12,51 @@ const About = () => {
       <div className="about-container">
         <div className="about-content">
           <h1>About</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            voluptas ipsam, repudiandae beatae, aspernatur iste voluptates nam,
-            nesciunt architecto cum eveniet dolorum molestias odio tempore?
-            Optio corporis nam amet nobis ex rerum id illum deserunt doloribus
-            sed suscipit veniam, aut nesciunt ipsa! Ullam cupiditate eveniet
-            facilis itaque omnis alias maxime nobis repellendus enim ex magnam
-            odio quam nulla sed dolor, amet animi! Esse, ullam consequuntur
-            incidunt error labore reprehenderit voluptatem cupiditate quod ut
-            dolorem aut, sed explicabo aspernatur non illo corporis repellat
-            numquam quam tempora magnam quisquam quaerat ratione. A porro
-            suscipit quidem ullam inventore veritatis, voluptatibus nisi,
-            aperiam soluta commodi, facere illum ipsa dolorum similique natus
-            totam voluptates libero? Esse omnis, quod laborum voluptates culpa,
-            sit minima cupiditate id fuga, dolorem eligendi at ducimus pariatur!
-            Reiciendis, molestiae blanditiis ab placeat soluta magnam, quas
-            labore maxime laborum libero consequuntur in non ullam cum est.
-            Corporis sint tempore at earum facilis. Numquam quas provident
-            voluptas facere optio molestiae earum. Dolorem reprehenderit
-            laboriosam sint velit harum placeat repudiandae commodi hic
-            recusandae magni nulla ab magnam, aperiam optio, quaerat explicabo
-            aliquam odit quisquam pariatur ad cum. Corporis sit tempore expedita
-            labore harum, inventore est quisquam ut cupiditate iste commodi.
-            Suscipit praesentium accusantium magnam.
-          </p>
+          <div
+            style={{
+              marginTop: "50px",
+              width: "100%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <div className="response">
+              <div className="contact-image-div">
+                <img src="/alihaider.jpg" alt="ali haider" />
+              </div>
+              <div className="con-desc">
+                <div className="cd-parts">
+                  <FaUser className="cd-parts-icon" />
+                  <span>Ali Haider (Chief Administrative Officer)</span>
+                </div>
+                <div className="cd-parts">
+                  <FaLocationDot className="cd-parts-icon" />
+                  <span>Lisbon, Portugal</span>
+                </div>
+                <div className="cd-parts">
+                  <FaPhoneAlt className="cd-parts-icon" />
+                  <span>
+                    <a href="tel:+880 013xxxxx76">9875641545</a>
+                  </span>
+                </div>
+                <div className="cd-parts">
+                  <FaEnvelope className="cd-parts-icon" />
+                  <span>
+                    <a href="mailto:alidkhaida@gmail.com">
+                      alidkhaida@gmail.com
+                    </a>
+                  </span>
+                </div>
+                <div className="cd-parts">
+                  <FaFacebook className="cd-parts-icon" />
+                  <span>
+                    <a href="https://www.facebook.com/alidkhaida">Message Me</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

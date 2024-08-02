@@ -213,10 +213,12 @@ const Admin = () => {
         alignItems: "center",
         justifyContent: "center",
         flexDirection: "column",
+        marginTop: "40px",
       }}
     >
       <div className="navAdmin">
         <nav className="mainNav">
+          <img src="/dataOrchard.png" alt="dataOrchard.png" />
           <ul>
             <li>
               <span
@@ -305,7 +307,7 @@ const Admin = () => {
               <h3>Total users : {users.length}</h3>
               <h2>Total Task : {totalCompletedTasks}</h2>
               <h2>Total Amount : {totalCompletedTasks * 5}</h2>
-              <div style={{ marginTop: "0px", marginBottom: "20px" }}>
+              <div style={{ marginTop: "10px", marginBottom: "20px" }}>
                 <button className="resetBtn" onClick={handleReset}>
                   Reset All
                 </button>

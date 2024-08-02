@@ -5,6 +5,7 @@ const NavBar = ({ userName }) => {
   const { setIsAuthenticated } = useAuth();
   return (
     <nav className="mainNav">
+      <img src="/dataOrchard.png" alt="dataOrchard.png" />
       <ul>
         <li>
           <Link to={`/users/${userName}`}>Home</Link>

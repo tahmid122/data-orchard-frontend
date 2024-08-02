@@ -53,6 +53,7 @@ const History = () => {
       >
         <div className="navAdmin">
           <nav className="mainNav">
+            <img src="/dataOrchard.png" alt="dataOrchard.png" />
             <ul>
               <li>
                 <span
@@ -95,6 +96,7 @@ const History = () => {
               textAlign: "center",
               // width: "100%",
               borderBottom: "4px solid red",
+              fontStyle: "italic",
             }}
           >
             Working History
