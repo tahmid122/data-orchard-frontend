@@ -185,6 +185,7 @@ const Task = () => {
         alignItems: "center",
         justifyContent: "center",
         flexDirection: "column",
+        marginTop: "40px",
       }}
     >
       <NavBar userName={userName} />
