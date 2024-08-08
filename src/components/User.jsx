@@ -64,10 +64,7 @@ const User = () => {
           <div className="user-details">
             <div className="userTop">
               <div className="userImage">
-                <img
-                  src={`https://data-orchard-server.onrender.com/${user.profileImage}`}
-                  alt="profileImage"
-                />
+                <img src={user.profileImage} alt="profileImage" />
               </div>
               <button
                 className="taskBtn"
@@ -118,14 +115,8 @@ const User = () => {
               <h3>NID Details :</h3>
             </div>
             <div className="nid-image">
-              <img
-                src={`https://data-orchard-server.onrender.com/${user.frontVoterId}`}
-                alt="frontVoterId"
-              />
-              <img
-                src={`https://data-orchard-server.onrender.com/${user.backVoterId}`}
-                alt="backVoterId"
-              />
+              <img src={user.frontVoterId} alt="frontVoterId" />
+              <img src={user.backVoterId} alt="backVoterId" />
             </div>
           </div>
           <div className="update">
