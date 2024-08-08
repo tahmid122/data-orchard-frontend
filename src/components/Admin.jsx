@@ -475,10 +475,7 @@ const Admin = () => {
                           </div>
                         </div>
                         <div className="p-image">
-                          <img
-                            src={`https://data-orchard-server.onrender.com/${user.profileImage}`}
-                            alt="image"
-                          />
+                          <img src={user.profileImage} alt="image" />
                         </div>
                       </div>
                       <div
@@ -493,14 +490,8 @@ const Admin = () => {
                           <h3>NID Details :</h3>
                         </div>
                         <div className="nid-image">
-                          <img
-                            src={`https://data-orchard-server.onrender.com/${user.frontVoterId}`}
-                            alt="frontVoterId"
-                          />
-                          <img
-                            src={`https://data-orchard-server.onrender.com/${user.backVoterId}`}
-                            alt="backVoterId"
-                          />
+                          <img src={user.frontVoterId} alt="frontVoterId" />
+                          <img src={user.backVoterId} alt="backVoterId" />
                         </div>
                       </div>
                     </div>
