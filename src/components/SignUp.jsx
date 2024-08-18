@@ -75,10 +75,10 @@ const SignUp = () => {
     if (!usersRegistrationDetails.userName.trim()) {
       validationErrors.userName = "userName is required ";
     } else if (
-      usersRegistrationDetails.userName.length > 8 ||
+      usersRegistrationDetails.userName.length > 16 ||
       usersRegistrationDetails.userName.length < 8
     ) {
-      validationErrors.userName = "User-name must be 8 charecters";
+      validationErrors.userName = "User-name must be 8 to 16 charecters";
     }
 
     if (!usersRegistrationDetails.phone.trim()) {
@@ -140,11 +140,15 @@ const SignUp = () => {
 
         const data = await res.json();
         const userEmail = await data.email;
-        if (userEmail) {
-          setIsAuthenticated(true);
-          navigate(`/upload/profileImage/${userEmail}`);
+        if (data.msg) {
+          window.alert(data.msg);
         } else {
-          window.alert("Something went wrong");
+          if (userEmail) {
+            setIsAuthenticated(true);
+            navigate(`/upload/profileImage/${userEmail}`);
+          } else {
+            window.alert("Something went wrong");
+          }
         }
       }
     } catch (error) {
@@ -167,7 +171,7 @@ const SignUp = () => {
             flexWrap: "wrap",
           }}
         >
-          <div className="form-box register">
+          <div className="form-box register" style={{ marginTop: "-30px" }}>
             <h2>Registration</h2>
             <form
               onSubmit={handleSubmit}

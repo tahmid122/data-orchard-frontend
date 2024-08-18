@@ -115,7 +115,7 @@ const ResetPassword = () => {
   };
 
   return (
-    <div id="register" style={{ marginTop: "40px" }}>
+    <div id="register">
       <div className="navAdmin">
         <nav className="mainNav">
           <img src="/dataOrchard.png" alt="dataOrchard.png" />
@@ -183,7 +183,7 @@ const ResetPassword = () => {
       >
         Find/Reset user password
       </h1>
-      <div className="wrapper" style={{ minHeight: "650px" }}>
+      <div className="wrapper" style={{ minHeight: "600px" }}>
         <div className="form-box login">
           <form
             onSubmit={findUserPassword}

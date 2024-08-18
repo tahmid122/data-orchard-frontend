@@ -208,12 +208,11 @@ const Admin = () => {
     <section
       id="admin"
       style={{
-        padding: "0 20px",
+        padding: "",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         flexDirection: "column",
-        marginTop: "40px",
       }}
     >
       <div className="navAdmin">

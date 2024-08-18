@@ -30,7 +30,7 @@ function App() {
     <AuthProvider>
       <AuthProvider2>
         <LoadingProvider>
-          {window.innerWidth > 850 ? (
+          {window.innerWidth > 950 ? (
             <BrowserRouter>
               <GlobalPreloader />
               <Routes>

@@ -182,6 +182,7 @@ const UpdateUser = () => {
           justifyContent: "flex-start",
           padding: "20px",
           flexWrap: "wrap",
+          marginTop: "-5px",
         }}
       >
         <div className="back">
@@ -194,7 +195,7 @@ const UpdateUser = () => {
             Go Back
           </span>
         </div>
-        <div className="form-box register">
+        <div className="form-box register" style={{ marginTop: "-30px" }}>
           <h2>Update Form</h2>
           <form onSubmit={handleSubmit} encType="multipart/form-data">
             <div

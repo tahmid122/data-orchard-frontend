@@ -57,13 +57,42 @@ const History = () => {
             <ul>
               <li>
                 <span
-                  style={{ cursor: "pointer" }}
                   onClick={() => {
                     navigate("/admin");
                   }}
-                  to={`/admin`}
+                  style={{ cursor: "pointer" }}
                 >
                   Admin Panel
+                </span>
+              </li>
+              <li>
+                <span
+                  onClick={() => {
+                    navigate("/usersReport");
+                  }}
+                  style={{ cursor: "pointer" }}
+                >
+                  Users Report
+                </span>
+              </li>
+              <li>
+                <span
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/adminUpdate");
+                  }}
+                >
+                  Update
+                </span>
+              </li>
+              <li>
+                <span
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/resetPassword");
+                  }}
+                >
+                  Find/Reset
                 </span>
               </li>
               <li>
