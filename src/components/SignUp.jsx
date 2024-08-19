@@ -376,9 +376,9 @@ const SignUp = () => {
                     defaultValue={usersRegistrationDetails.bank.accountNumber}
                     onChange={handleUsersRegistration2}
                   />
-                  {errors.accountHolderName && (
+                  {errors.accountNumber && (
                     <span>
-                      {errors.accountHolderName}
+                      {errors.accountNumber}
                       <IoWarning className="warning" />
                     </span>
                   )}
