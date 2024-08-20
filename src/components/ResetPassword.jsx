@@ -5,6 +5,7 @@ import { FaLock } from "react-icons/fa6";
 import { IoWarning } from "react-icons/io5";
 import { useAuth2 } from "./AuthContext2";
 import { LoadingContext } from "./LoadingContext";
+import { Link } from "react-router-dom";
 const ResetPassword = () => {
   const { startLoading, stopLoading } = useContext(LoadingContext);
   const [errors, setErrors] = useState({});
@@ -118,7 +119,9 @@ const ResetPassword = () => {
     <div id="register">
       <div className="navAdmin">
         <nav className="mainNav">
-          <img src="/dataOrchard.png" alt="dataOrchard.png" />
+          <Link to={"/admin"}>
+            <img src="/dataOrchard.png" alt="dataOrchard.png" />
+          </Link>
           <ul>
             <li>
               <span

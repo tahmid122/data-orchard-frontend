@@ -123,7 +123,9 @@ const UsersReport = () => {
     >
       <div className="navAdmin">
         <nav className="mainNav">
-          <img src="/dataOrchard.png" alt="dataOrchard.png" />
+          <Link to={"/admin"}>
+            <img src="/dataOrchard.png" alt="dataOrchard.png" />
+          </Link>
           <ul>
             <li>
               <span

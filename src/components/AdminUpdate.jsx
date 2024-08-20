@@ -5,6 +5,7 @@ import { useNavigate } from "react-router";
 import { IoWarning } from "react-icons/io5";
 import { useAuth2 } from "./AuthContext2";
 import { LoadingContext } from "./LoadingContext";
+import { Link } from "react-router-dom";
 const AdminUpdate = () => {
   const { startLoading, stopLoading } = useContext(LoadingContext);
   const [errors, setErrors] = useState({});
@@ -75,7 +76,9 @@ const AdminUpdate = () => {
     <div>
       <div className="navAdmin">
         <nav className="mainNav">
-          <img src="/dataOrchard.png" alt="dataOrchard.png" />
+          <Link to={"/admin"}>
+            <img src="/dataOrchard.png" alt="dataOrchard.png" />
+          </Link>
           <ul>
             <li>
               <span
