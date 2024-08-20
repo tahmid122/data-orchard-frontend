@@ -79,6 +79,8 @@ const SignUp = () => {
       usersRegistrationDetails.userName.length < 8
     ) {
       validationErrors.userName = "User-name must be 8 to 16 charecters";
+    } else if (/\s/.test(usersRegistrationDetails.userName)) {
+      validationErrors.userName = "UserName must not contain spaces";
     }
 
     if (!usersRegistrationDetails.phone.trim()) {
