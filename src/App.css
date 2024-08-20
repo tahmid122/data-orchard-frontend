@@ -147,7 +147,6 @@ body {
   height: auto;
   color: white;
 }
-
 .navBarAdmin {
   padding: 10px 10px;
 }
@@ -774,6 +773,13 @@ textarea {
 } */
 
 /* User */
+/* .userReport {
+  height: 1000px;
+  overflow-y: scroll;
+} */
+/* ::-webkit-scrollbar {
+  display: none;
+} */
 .user-content {
   padding: 20px;
 }
@@ -1223,7 +1229,19 @@ textarea {
 }
 .usersReport-content {
   margin-top: 30px;
+  overflow-y: scroll;
+  height: 800px;
 }
+.usersReport-content {
+  overflow: auto; /* Allows scrolling */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.usersReport-content::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
 .usersReport-content table tr td {
   text-align: start;
   padding: 5px;
