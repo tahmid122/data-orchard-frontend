@@ -173,16 +173,6 @@ const ResetPassword = () => {
           </ul>
         </nav>
       </div>
-      <h1
-        style={{
-          color: "white",
-          marginBottom: "20px",
-          textAlign: "center",
-          letterSpacing: "5px",
-        }}
-      >
-        Find/Reset user password
-      </h1>
       <div className="wrapper" style={{ minHeight: "600px" }}>
         <div className="form-box login">
           <form

@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 const MainNav = () => {
   return (
     <nav className="mainNav">
-      <img src="/dataOrchard.png" alt="dataOrchard.png" />
+      <Link to={"/"}>
+        <img src="/dataOrchard.png" alt="dataOrchard.png" />
+      </Link>
       <ul>
         <li>
           <Link to={"/"}>Home</Link>
